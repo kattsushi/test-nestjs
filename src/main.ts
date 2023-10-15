@@ -9,7 +9,9 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
   const config = new DocumentBuilder()
     .setTitle('Users API')
-    .setDescription('The users API')
+    .setDescription(
+      'The users API para probar la authenticacion en esta api abajo en la seccion Auth hacer un request a login con username: test y password: test, luego en la respuesta viene el access token que se debe usar en la seccion Authorize para poder probar los endpoints que necesitan authenticacion',
+    )
     .setVersion('1.0')
     .addBearerAuth(
       {

@@ -9,8 +9,8 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { UserService } from './user.service';
-import { UserDTO } from 'src/user/user.dto';
-import { JwtAuthGuard } from 'src/auth/jwt.guard';
+import { UserDTO } from './user.dto';
+import { JwtAuthGuard } from './../auth/jwt.guard';
 import { ApiBearerAuth, ApiParam, ApiTags } from '@nestjs/swagger';
 
 @ApiTags('Users')
